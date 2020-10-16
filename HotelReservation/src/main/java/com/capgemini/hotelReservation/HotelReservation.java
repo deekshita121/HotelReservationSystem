@@ -24,9 +24,9 @@ public class HotelReservation {
 	 */
 	public void addHotels() {
 
-		Hotel h1 = new Hotel("Lakewood", 110, 90);
-		Hotel h2 = new Hotel("Brigewood", 150, 50);
-		Hotel h3 = new Hotel("Ridgewood", 220, 150);
+		Hotel h1 = new Hotel("Lakewood", 110, 90, 3);
+		Hotel h2 = new Hotel("Brigewood", 150, 50, 4);
+		Hotel h3 = new Hotel("Ridgewood", 220, 150, 5);
 
 		hotelList.add(h1);
 		hotelList.add(h2);

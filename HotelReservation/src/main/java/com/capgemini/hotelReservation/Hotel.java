@@ -5,12 +5,14 @@ public class Hotel {
 	private String name;
 	private int weekdayRate;
 	private int weekendRate;
+	private int rate;
 
-	public Hotel(String name, int weekdayRate, int weekendRate) {
+	public Hotel(String name, int weekdayRate, int weekendRate, int rate) {
 		super();
 		this.name = name;
 		this.weekdayRate = weekdayRate;
 		this.weekendRate = weekendRate;
+		this.rate = rate;
 	}
 
 	public String getName() {
@@ -37,8 +39,16 @@ public class Hotel {
 		this.weekendRate = weekendRate;
 	}
 	
+	public int getRate() {
+		return rate;
+	}
+
+	public void setRate(int rate) {
+		this.rate = rate;
+	}
+	
 	@Override
 	public String toString() {
-		return "Hotel : \nName = " + name + "\nWeekday Rate = $" + weekdayRate + "\nWeekend Rate = $" + weekendRate +"\n";
+		return "Hotel : \nName = " + name + "\nWeekday Rate = $" + weekdayRate + "\nWeekend Rate = $" + weekendRate +"\nRate = " + rate +"\n";
 	}
 }
