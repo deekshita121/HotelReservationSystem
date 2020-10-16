@@ -3,12 +3,14 @@ package com.capgemini.hotelReservation;
 public class Hotel {
 
 	private String name;
-	private int rate;
+	private int weekdayRate;
+	private int weekendRate;
 
-	public Hotel(String name, int rate) {
+	public Hotel(String name, int weekdayRate, int weekendRate) {
 		super();
 		this.name = name;
-		this.rate = rate;
+		this.weekdayRate = weekdayRate;
+		this.weekendRate = weekendRate;
 	}
 
 	public String getName() {
@@ -19,16 +21,24 @@ public class Hotel {
 		this.name = name;
 	}
 
-	public int getRate() {
-		return rate;
+	public int getWeekdayRate() {
+		return weekdayRate;
 	}
 
-	public void setRate(int rate) {
-		this.rate = rate;
+	public void setWeekdayRate(int weekdayRate) {
+		this.weekdayRate = weekdayRate;
+	}
+	
+	public int getWeekendRate() {
+		return weekendRate;
 	}
 
+	public void setWeekendRate(int weekendRate) {
+		this.weekendRate = weekendRate;
+	}
+	
 	@Override
 	public String toString() {
-		return "Hotel : \nName = " + name + "\nRate = $" + rate + "\n";
+		return "Hotel : \nName = " + name + "\nWeekday Rate = $" + weekdayRate + "\nWeekend Rate = $" + weekendRate +"\n";
 	}
 }

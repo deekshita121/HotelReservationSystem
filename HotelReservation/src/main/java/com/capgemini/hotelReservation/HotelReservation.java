@@ -16,9 +16,9 @@ public class HotelReservation {
 	 */
 	public void addHotels() {
 
-		Hotel h1 = new Hotel("Lakewood", 110);
-		Hotel h2 = new Hotel("Brigewood", 160);
-		Hotel h3 = new Hotel("Ridgewood", 220);
+		Hotel h1 = new Hotel("Lakewood", 110, 90);
+		Hotel h2 = new Hotel("Brigewood", 150, 50);
+		Hotel h3 = new Hotel("Ridgewood", 220, 150);
 
 		hotelList.add(h1);
 		hotelList.add(h2);
@@ -32,14 +32,14 @@ public class HotelReservation {
 		log.info("Enter dates in the format with a comma (dd mmm yyy) ");
 		String date = sc.nextLine();
 		String days[] = date.split(",");
-		int minCost = hotelList.get(0).getRate();
+		int minCost = hotelList.get(0).getWeekdayRate();
 		String cheapHotelName = hotelList.get(0).getName();
 		for (int i = 1; i < hotelList.size(); i++)
-			if (hotelList.get(i).getRate() < minCost) {
-				minCost = hotelList.get(i).getRate();
+			if (hotelList.get(i).getWeekdayRate() < minCost) {
+				minCost = hotelList.get(i).getWeekdayRate();
 				cheapHotelName = hotelList.get(i).getName();
 			}
-		log.info(cheapHotelName + ", Total Rates: $" + minCost);
+		log.info(cheapHotelName + ", Total Rates: $" + minCost*days.length);
 
 	}
 
