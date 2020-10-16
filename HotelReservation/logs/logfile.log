@@ -1,0 +1,37 @@
+INFO  | 2020-10-16 19:50:29 | [main] hotelReservation.HotelReservation (HotelReservation.java:12) - Hello World!
+INFO  | 2020-10-16 20:08:34 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel [
+Name=Lakewood
+Rate=$110
+]
+INFO  | 2020-10-16 20:08:34 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel [
+Name=Brigewood
+Rate=$160
+]
+INFO  | 2020-10-16 20:08:34 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel [
+Name=Ridgewood
+Rate=$220
+]
+INFO  | 2020-10-16 20:10:00 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name=Lakewood
+Rate=$110
+
+INFO  | 2020-10-16 20:10:00 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name=Brigewood
+Rate=$160
+
+INFO  | 2020-10-16 20:10:00 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name=Ridgewood
+Rate=$220
+
+INFO  | 2020-10-16 20:10:37 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name = Lakewood
+Rate = $110
+
+INFO  | 2020-10-16 20:10:37 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name = Brigewood
+Rate = $160
+
+INFO  | 2020-10-16 20:10:37 | [main] hotelReservation.HotelReservation (HotelReservation.java:25) - Hotel : 
+Name = Ridgewood
+Rate = $220
+
