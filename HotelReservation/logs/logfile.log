@@ -35,3 +35,41 @@ INFO  | 2020-10-16 20:10:37 | [main] hotelReservation.HotelReservation (HotelRes
 Name = Ridgewood
 Rate = $220
 
+INFO  | 2020-10-16 21:14:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:27) - Hotel : 
+Name = Lakewood
+Rate = $110
+
+INFO  | 2020-10-16 21:14:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:27) - Hotel : 
+Name = Brigewood
+Rate = $160
+
+INFO  | 2020-10-16 21:14:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:27) - Hotel : 
+Name = Ridgewood
+Rate = $220
+
+INFO  | 2020-10-16 21:49:57 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Lakewood
+Rate = $110
+
+INFO  | 2020-10-16 21:49:57 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Brigewood
+Rate = $160
+
+INFO  | 2020-10-16 21:49:57 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Ridgewood
+Rate = $220
+
+INFO  | 2020-10-16 21:51:16 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Lakewood
+Rate = $110
+
+INFO  | 2020-10-16 21:51:16 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Brigewood
+Rate = $160
+
+INFO  | 2020-10-16 21:51:16 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Hotel : 
+Name = Ridgewood
+Rate = $220
+
+INFO  | 2020-10-16 21:51:16 | [main] hotelReservation.HotelReservation (HotelReservation.java:29) - Enter 3 dates in the format with a comma (dd mmm yyy) 
+INFO  | 2020-10-16 21:51:55 | [main] hotelReservation.HotelReservation (HotelReservation.java:39) - Lakewood
