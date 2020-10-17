@@ -22,6 +22,7 @@ public class HotelReservation {
 	private static Scanner sc = new Scanner(System.in);
 	static ArrayList<Hotel> hotelList = new ArrayList<Hotel>();
 	Map<Hotel, Integer> hotelRateMap = new HashMap<>();
+
 	/**
 	 * 
 	 */
@@ -39,7 +40,7 @@ public class HotelReservation {
 	/**
 	 * 
 	 */
-	public void cheapHotel() {
+	public void addTotalRate() {
 
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MM yyyy");
 		log.info("Enter start date (dd MM yyyy): ");
@@ -51,32 +52,46 @@ public class HotelReservation {
 		int noOfDays = (int) ChronoUnit.DAYS.between(startDate, endDate);
 		DayOfWeek startDay = startDate.getDayOfWeek();
 		DayOfWeek endDay = endDate.getDayOfWeek();
-	//	long startDayValue = startDay.getValue();
-	//	long endDayValue = endDay.getValue();
-		
+		// long startDayValue = startDay.getValue();
+		// long endDayValue = endDay.getValue();
+
 		long daysWithoutWeekends = noOfDays - 2 * ((noOfDays + startDay.getValue()) / 7);
-		long noOfWeekdays = daysWithoutWeekends + (startDay.equals("SUNDAY") ? 1 : 0) + (endDay.equals("SUNDAY") ? 1 : 0);
-		long noOfWeekends = noOfDays - (noOfWeekdays) +1;
-		log.info("num of weekdays "+noOfWeekdays+" no of weekends "+noOfWeekends);
-		
+		long noOfWeekdays = daysWithoutWeekends + (startDay.equals("SUNDAY") ? 1 : 0)
+				+ (endDay.equals("SUNDAY") ? 1 : 0);
+		long noOfWeekends = noOfDays - (noOfWeekdays) + 1;
+		log.info("num of weekdays " + noOfWeekdays + " no of weekends " + noOfWeekends);
+
 		for (Hotel hotel : hotelList) {
-			long totalRate = noOfWeekdays * hotel.getWeekdayRate()
-					+ noOfWeekends * hotel.getWeekendRate();
+			long totalRate = noOfWeekdays * hotel.getWeekdayRate() + noOfWeekends * hotel.getWeekendRate();
 			hotel.setTotalRate(totalRate);
 			log.info("Total Rate=" + totalRate);
 		}
-		
-		List<Hotel> sortedHotelList =  hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate)).collect(Collectors.toList());
+	}
+
+	public void cheapHotel() {
+		List<Hotel> sortedHotelList = hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate))
+				.collect(Collectors.toList());
 		long minCost = sortedHotelList.get(0).getTotalRate();
 		String cheapHotel = sortedHotelList.get(0).getName();
 		for (Hotel hotel : sortedHotelList) {
-			if(hotel.getTotalRate()==minCost) {
-				if(hotel.getRate()< sortedHotelList.get(0).getRate()) {
+			if (hotel.getTotalRate() == minCost) {
+				if (hotel.getRate() < sortedHotelList.get(0).getRate()) {
 					cheapHotel = hotel.getName();
 				}
 			}
 		}
-		log.info(cheapHotel+", TotalRate = $"+minCost);
+		log.info(cheapHotel + ", TotalRate = $" + minCost);
+	}
+
+	public void highRatedHotel() {
+		List<Hotel> sortedHotelList = hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate))
+				.collect(Collectors.toList());
+		int count = 0;
+		for (Hotel hotel : sortedHotelList) {
+			count++;
+		}
+		count--;
+		log.info(sortedHotelList.get(count).getName() + ", TotalRate = $" + sortedHotelList.get(count).getRate());
 	}
 
 	public static void main(String[] args) {
@@ -84,7 +99,9 @@ public class HotelReservation {
 
 		hotelReservation.addHotels();
 		hotelReservation.hotelList.forEach(n -> log.info(n));
-		hotelReservation.cheapHotel();
+		hotelReservation.addTotalRate();
+	//	hotelReservation.cheapHotel();
+		hotelReservation.highRatedHotel();
 
 	}
 }
