@@ -16,6 +16,8 @@ import org.apache.logging.log4j.Logger;
 public class HotelReservation {
 	private static final Logger log = LogManager.getLogger(HotelReservation.class);
 	private static Scanner sc = new Scanner(System.in);
+	private static final String Date_Pattern = ("[0-9]{2}\\s[0-9]{2}\\s[0-9]{4}");
+	private static final String Customer_Type = ("[Re]{2}[gw]{1}[ua]{1}[lr]{1}[ad]{1}[rs]{1}");
 	static ArrayList<Hotel> hotelList = new ArrayList<Hotel>();
 
 	/**
@@ -33,22 +35,25 @@ public class HotelReservation {
 	}
 
 	/**
+	 * @throws InvalidInputException
 	 * 
 	 */
-	public void addTotalRate() {
+	public void addTotalRate() throws InvalidInputException {
 
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd MM yyyy");
 		log.info("Enter start date (dd MM yyyy): ");
 		String start = sc.nextLine();
+		if (!start.matches(Date_Pattern))
+			throw new InvalidInputException("Invalid format");
 		log.info("Enter end date (dd MM yyyy): ");
 		String end = sc.nextLine();
+		if (!end.matches(Date_Pattern))
+			throw new InvalidInputException("Invalid format");
 		LocalDate startDate = LocalDate.parse(start, dateFormat);
 		LocalDate endDate = LocalDate.parse(end, dateFormat);
 		int noOfDays = (int) ChronoUnit.DAYS.between(startDate, endDate);
 		DayOfWeek startDay = startDate.getDayOfWeek();
 		DayOfWeek endDay = endDate.getDayOfWeek();
-		// long startDayValue = startDay.getValue();
-		// long endDayValue = endDay.getValue();
 
 		long daysWithoutWeekends = noOfDays - 2 * ((noOfDays + startDay.getValue()) / 7);
 		long noOfWeekdays = daysWithoutWeekends + (startDay.equals("SUNDAY") ? 1 : 0)
@@ -58,7 +63,8 @@ public class HotelReservation {
 
 		System.out.println("Enter the type of customer Rewards or Regular");
 		String typeOfCustomer = sc.nextLine();
-
+		if (!typeOfCustomer.matches(Customer_Type))
+			throw new InvalidInputException("Invalid format");
 		if (typeOfCustomer.equals("Regular")) {
 
 			for (Hotel hotel : hotelList) {
@@ -108,29 +114,35 @@ public class HotelReservation {
 		log.info(sortedHotelList.get(count).getName() + ", TotalRate = $" + sortedHotelList.get(count).getRate());
 	}
 
+	/**
+	 * 
+	 */
 	public void cheapBestRatedHotel() {
 		List<Hotel> sortedHotelList = hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate))
 				.collect(Collectors.toList());
 		long minCost = sortedHotelList.get(0).getTotalRate();
+		int rate = sortedHotelList.get(0).getRate();
 		String cheapHotel = sortedHotelList.get(0).getName();
 		for (Hotel hotel : sortedHotelList) {
 			if (hotel.getTotalRate() == minCost) {
 				if (hotel.getRate() < sortedHotelList.get(0).getRate()) {
 					cheapHotel = hotel.getName();
+					rate = hotel.getRate();
+					minCost = hotel.getTotalRate();
 				}
 			}
 		}
-		log.info(cheapHotel + ", TotalRate = $" + minCost);
+		log.info(cheapHotel + ", TotalRate = $" + minCost + " ,Rating : " + rate);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidInputException {
+		
 		HotelReservation hotelReservation = new HotelReservation();
-
 		hotelReservation.addHotels();
 		hotelReservation.hotelList.forEach(n -> log.info(n));
 		hotelReservation.addTotalRate();
-	    hotelReservation.cheapBestRatedHotel();
-	//	hotelReservation.highRatedHotel();
+		hotelReservation.cheapBestRatedHotel();
+	  //  hotelReservation.highRatedHotel();
 
 	}
 }
