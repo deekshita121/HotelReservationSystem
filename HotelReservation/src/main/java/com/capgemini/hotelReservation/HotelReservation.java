@@ -136,13 +136,13 @@ public class HotelReservation {
 	}
 
 	public static void main(String[] args) throws InvalidInputException {
+		
 		HotelReservation hotelReservation = new HotelReservation();
-
 		hotelReservation.addHotels();
 		hotelReservation.hotelList.forEach(n -> log.info(n));
 		hotelReservation.addTotalRate();
 		hotelReservation.cheapBestRatedHotel();
-		// hotelReservation.highRatedHotel();
+	  //  hotelReservation.highRatedHotel();
 
 	}
 }
