@@ -6,13 +6,15 @@ public class Hotel {
 	private int weekdayRate;
 	private int weekendRate;
 	private int rate;
+	private long totalRate;
 
-	public Hotel(String name, int weekdayRate, int weekendRate, int rate) {
+	public Hotel(String name, int weekdayRate, int weekendRate, int rate, long totalRate) {
 		super();
 		this.name = name;
 		this.weekdayRate = weekdayRate;
 		this.weekendRate = weekendRate;
 		this.rate = rate;
+		this.totalRate = totalRate;
 	}
 
 	public String getName() {
@@ -45,6 +47,14 @@ public class Hotel {
 
 	public void setRate(int rate) {
 		this.rate = rate;
+	}
+	
+	public long getTotalRate() {
+		return totalRate;
+	}
+
+	public void setTotalRate(long totalRate) {
+		this.totalRate = totalRate;
 	}
 	
 	@Override
