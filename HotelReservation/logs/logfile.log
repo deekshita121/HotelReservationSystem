@@ -977,3 +977,65 @@ Weekend Rate for rewards customer = $40
 Rate = 5
 
 INFO  | 2020-10-17 16:51:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 17:19:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Weekday Rate for rewards customer = $80
+Weekend Rate for rewards customer = $80
+Rate = 3
+
+INFO  | 2020-10-17 17:19:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Weekday Rate for rewards customer = $110
+Weekend Rate for rewards customer = $50
+Rate = 4
+
+INFO  | 2020-10-17 17:19:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Weekday Rate for rewards customer = $100
+Weekend Rate for rewards customer = $40
+Rate = 5
+
+INFO  | 2020-10-17 17:19:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 17:19:27 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 17:19:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 17:19:41 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=160
+INFO  | 2020-10-17 17:19:41 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=160
+INFO  | 2020-10-17 17:19:41 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=140
+INFO  | 2020-10-17 17:19:41 | [main] hotelReservation.HotelReservation (HotelReservation.java:113) - Brigewood, TotalRate = $4
+INFO  | 2020-10-17 17:21:48 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Weekday Rate for rewards customer = $80
+Weekend Rate for rewards customer = $80
+Rate = 3
+
+INFO  | 2020-10-17 17:21:48 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Bridgewood
+Weekday Rate = $150
+Weekend Rate = $50
+Weekday Rate for rewards customer = $110
+Weekend Rate for rewards customer = $50
+Rate = 4
+
+INFO  | 2020-10-17 17:21:48 | [main] hotelReservation.HotelReservation (HotelReservation.java:135) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Weekday Rate for rewards customer = $100
+Weekend Rate for rewards customer = $40
+Rate = 5
+
+INFO  | 2020-10-17 17:21:48 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 17:22:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 17:22:05 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 17:22:15 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=160
+INFO  | 2020-10-17 17:22:15 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=160
+INFO  | 2020-10-17 17:22:15 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Total Rate=140
+INFO  | 2020-10-17 17:22:15 | [main] hotelReservation.HotelReservation (HotelReservation.java:128) - Ridgewood, TotalRate = $140
