@@ -24,9 +24,9 @@ public class HotelReservation {
 	 */
 	public void addHotels() {
 
-		Hotel h1 = new Hotel("Lakewood", 110, 90);
-		Hotel h2 = new Hotel("Brigewood", 150, 50);
-		Hotel h3 = new Hotel("Ridgewood", 220, 150);
+		Hotel h1 = new Hotel("Lakewood", 110, 90, 0);
+		Hotel h2 = new Hotel("Brigewood", 150, 50, 0);
+		Hotel h3 = new Hotel("Ridgewood", 220, 150, 0);
 
 		hotelList.add(h1);
 		hotelList.add(h2);
@@ -50,23 +50,23 @@ public class HotelReservation {
 		DayOfWeek endDay = endDate.getDayOfWeek();
 		long daysWithoutWeekends = noOfDays - 2 * ((noOfDays + startDay.getValue()) / 7);
 		long noOfWeekdays = daysWithoutWeekends + (startDay.getValue() == 1 ? 1 : 0) + (endDay.getValue() == 1 ? 1 : 0);
-		long noOfWeekends = noOfDays - (noOfWeekdays);
+		long noOfWeekends = noOfDays - (noOfWeekdays)+1;
 		
-		long minCost = hotelList.get(0).getWeekdayRate() * noOfWeekdays
-				+ hotelList.get(0).getWeekendRate() * noOfWeekends;
-		String cheapHotel = hotelList.get(0).getName();
-
-		for (int i = 1; i < hotelList.size(); i++) {
-			if (hotelList.get(i).getWeekdayRate() * noOfWeekdays
-					+ hotelList.get(i).getWeekendRate() * noOfWeekends < minCost) {
-				minCost = hotelList.get(i).getWeekdayRate() * noOfWeekdays
-						+ hotelList.get(i).getWeekendRate() * noOfWeekends;
-				cheapHotel = hotelList.get(i).getName();
-			}
+		for (Hotel hotel : hotelList) {
+			long totalRate = noOfWeekdays * hotel.getWeekdayRate()
+					+ noOfWeekends * hotel.getWeekendRate();
+			hotel.setTotalRate(totalRate);
+			log.info("Total Rate=" + totalRate);
 		}
-
-		log.info(cheapHotel + ", Total rate :$" + minCost);
-
+		
+		List<Hotel> sortedHotelList =  hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate)).collect(Collectors.toList());
+		long minCost = sortedHotelList.get(0).getTotalRate();
+		String cheapHotel = sortedHotelList.get(0).getName();
+		if(sortedHotelList.get(1).getTotalRate()==minCost) {
+			log.info(sortedHotelList.get(1).getName()+", TotalRate = $"+minCost);
+		
+		}
+		log.info(cheapHotel+", TotalRate = $"+minCost);
 	}
 
 	public static void main(String[] args) {
