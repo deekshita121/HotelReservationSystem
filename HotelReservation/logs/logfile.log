@@ -765,3 +765,190 @@ INFO  | 2020-10-17 14:33:09 | [main] hotelReservation.HotelReservation (HotelRes
 INFO  | 2020-10-17 14:33:09 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=200
 INFO  | 2020-10-17 14:33:09 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=370
 INFO  | 2020-10-17 14:33:09 | [main] hotelReservation.HotelReservation (HotelReservation.java:79) - Lakewood, TotalRate = $200
+INFO  | 2020-10-17 16:17:30 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:17:30 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:17:30 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:17:30 | [main] hotelReservation.HotelReservation (HotelReservation.java:45) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:17:37 | [main] hotelReservation.HotelReservation (HotelReservation.java:47) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:17:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:60) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:17:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=200
+INFO  | 2020-10-17 16:17:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=200
+INFO  | 2020-10-17 16:17:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=370
+INFO  | 2020-10-17 16:18:21 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:18:21 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:18:21 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:18:21 | [main] hotelReservation.HotelReservation (HotelReservation.java:45) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:18:27 | [main] hotelReservation.HotelReservation (HotelReservation.java:47) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:18:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:60) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:18:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=200
+INFO  | 2020-10-17 16:18:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=200
+INFO  | 2020-10-17 16:18:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:66) - Total Rate=370
+INFO  | 2020-10-17 16:18:31 | [main] hotelReservation.HotelReservation (HotelReservation.java:76) - Ridgewood, TotalRate = $370
+INFO  | 2020-10-17 16:20:12 | [main] hotelReservation.HotelReservation (HotelReservation.java:85) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:20:13 | [main] hotelReservation.HotelReservation (HotelReservation.java:85) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:20:13 | [main] hotelReservation.HotelReservation (HotelReservation.java:85) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:20:13 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:20:27 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:20:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:20:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:20:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:20:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=370
+INFO  | 2020-10-17 16:20:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:77) - Ridgewood, TotalRate = $370
+INFO  | 2020-10-17 16:24:03 | [main] hotelReservation.HotelReservation (HotelReservation.java:88) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:24:03 | [main] hotelReservation.HotelReservation (HotelReservation.java:88) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:24:03 | [main] hotelReservation.HotelReservation (HotelReservation.java:88) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:24:03 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:24:10 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:24:17 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:24:17 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:24:17 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:24:17 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=370
+INFO  | 2020-10-17 16:24:17 | [main] hotelReservation.HotelReservation (HotelReservation.java:81) - Lakewood, TotalRate = $200
+INFO  | 2020-10-17 16:27:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:27:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:27:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:27:33 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Lakewood, TotalRate = $0
+INFO  | 2020-10-17 16:28:22 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:28:22 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:28:22 | [main] hotelReservation.HotelReservation (HotelReservation.java:90) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:28:22 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:28:30 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:28:36 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:28:36 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:28:36 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:28:36 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=370
+INFO  | 2020-10-17 16:28:36 | [main] hotelReservation.HotelReservation (HotelReservation.java:83) - Lakewood, TotalRate = $200
+INFO  | 2020-10-17 16:33:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:33:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:33:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:33:01 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:33:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Lakewood
+Weekday Rate = $110
+Weekend Rate = $90
+Rate = 3
+
+INFO  | 2020-10-17 16:33:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Brigewood
+Weekday Rate = $150
+Weekend Rate = $50
+Rate = 4
+
+INFO  | 2020-10-17 16:33:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:101) - Hotel : 
+Name = Ridgewood
+Weekday Rate = $220
+Weekend Rate = $150
+Rate = 5
+
+INFO  | 2020-10-17 16:33:42 | [main] hotelReservation.HotelReservation (HotelReservation.java:46) - Enter start date (dd MM yyyy): 
+INFO  | 2020-10-17 16:33:49 | [main] hotelReservation.HotelReservation (HotelReservation.java:48) - Enter end date (dd MM yyyy): 
+INFO  | 2020-10-17 16:33:53 | [main] hotelReservation.HotelReservation (HotelReservation.java:62) - num of weekdays 1 no of weekends 1
+INFO  | 2020-10-17 16:33:53 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:33:53 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=200
+INFO  | 2020-10-17 16:33:53 | [main] hotelReservation.HotelReservation (HotelReservation.java:67) - Total Rate=370
+INFO  | 2020-10-17 16:33:53 | [main] hotelReservation.HotelReservation (HotelReservation.java:94) - Ridgewood, TotalRate = $5
