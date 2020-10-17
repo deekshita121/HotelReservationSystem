@@ -5,14 +5,18 @@ public class Hotel {
 	private String name;
 	private int weekdayRate;
 	private int weekendRate;
-	private int rate;
+	private int rewardsWeekdayRate;
+	private int rewardsWeekendRate;
 	private long totalRate;
+	private int rate;
 
-	public Hotel(String name, int weekdayRate, int weekendRate, int rate, long totalRate) {
+	public Hotel(String name, int weekdayRate, int weekendRate, int rewardsWeekdayRate, int rewardsWeekendRate, int rate, long totalRate) {
 		super();
 		this.name = name;
 		this.weekdayRate = weekdayRate;
 		this.weekendRate = weekendRate;
+		this.rewardsWeekdayRate = rewardsWeekdayRate;
+		this.rewardsWeekendRate = rewardsWeekendRate;
 		this.rate = rate;
 		this.totalRate = totalRate;
 	}
@@ -41,6 +45,22 @@ public class Hotel {
 		this.weekendRate = weekendRate;
 	}
 	
+	public int getRewardsWeekdayRate() {
+		return rewardsWeekdayRate;
+	}
+
+	public void setRewardsWeekdayRate(int rewardsWeekdayRate) {
+		this.rewardsWeekdayRate = rewardsWeekdayRate;
+	}
+	
+	public int getRewardsWeekendRate() {
+		return rewardsWeekendRate;
+	}
+
+	public void setRewardsWeekendRate(int rewardsWeekendRate) {
+		this.rewardsWeekendRate = rewardsWeekendRate;
+	}
+	
 	public int getRate() {
 		return rate;
 	}
@@ -59,6 +79,6 @@ public class Hotel {
 	
 	@Override
 	public String toString() {
-		return "Hotel : \nName = " + name + "\nWeekday Rate = $" + weekdayRate + "\nWeekend Rate = $" + weekendRate +"\nRate = " + rate +"\n";
+		return "Hotel : \nName = " + name + "\nWeekday Rate = $" + weekdayRate + "\nWeekend Rate = $" + weekendRate + "\nWeekday Rate for rewards customer = $" + rewardsWeekdayRate + "\nWeekend Rate for rewards customer = $" + rewardsWeekendRate +"\nRate = " + rate +"\n";
 	}
 }

@@ -28,9 +28,9 @@ public class HotelReservation {
 	 */
 	public void addHotels() {
 
-		Hotel h1 = new Hotel("Lakewood", 110, 90, 3, 0);
-		Hotel h2 = new Hotel("Brigewood", 150, 50, 4, 0);
-		Hotel h3 = new Hotel("Ridgewood", 220, 150, 5, 0);
+		Hotel h1 = new Hotel("Lakewood", 110, 90, 80, 80, 3, 0);
+		Hotel h2 = new Hotel("Brigewood", 150, 50, 110, 50, 4, 0);
+		Hotel h3 = new Hotel("Ridgewood", 220, 150, 100, 40, 5, 0);
 
 		hotelList.add(h1);
 		hotelList.add(h2);
@@ -68,6 +68,9 @@ public class HotelReservation {
 		}
 	}
 
+	/**
+	 * 
+	 */
 	public void cheapHotel() {
 		List<Hotel> sortedHotelList = hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate))
 				.collect(Collectors.toList());
@@ -83,6 +86,9 @@ public class HotelReservation {
 		log.info(cheapHotel + ", TotalRate = $" + minCost);
 	}
 
+	/**
+	 * 
+	 */
 	public void highRatedHotel() {
 		List<Hotel> sortedHotelList = hotelList.stream().sorted(Comparator.comparing(Hotel::getTotalRate))
 				.collect(Collectors.toList());
@@ -100,7 +106,7 @@ public class HotelReservation {
 		hotelReservation.addHotels();
 		hotelReservation.hotelList.forEach(n -> log.info(n));
 		hotelReservation.addTotalRate();
-	//	hotelReservation.cheapHotel();
+		// hotelReservation.cheapHotel();
 		hotelReservation.highRatedHotel();
 
 	}
